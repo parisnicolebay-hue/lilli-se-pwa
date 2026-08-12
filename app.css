@@ -581,3 +581,15 @@
 /* Locale switch: quiet pill. */
 .app .lilli-locale { color: var(--v-muted); }
 .app .lilli-locale__select { border-radius: 100px; border-color: var(--v-line); background: #fff; }
+
+/* The illustrations: Lilli's badge and the Vanilli OS mark. */
+.lilli-avatar { display: block; border-radius: 50%; }
+.lilli-avatar--lg { width: 96px; height: 96px; margin-bottom: 0.6rem; }
+.lilli-avatar--sm { width: 44px; height: 44px; flex: none; }
+.lilli-head--row { display: flex; align-items: center; gap: 0.7rem; }
+.lilli-head--row p { margin: 0; }
+.lilli-footmark {
+  display: flex; align-items: center; gap: 0.45rem;
+  color: var(--v-muted); font-size: 0.8rem;
+}
+.lilli-footmark img { display: block; opacity: 0.85; }

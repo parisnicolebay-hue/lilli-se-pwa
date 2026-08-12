@@ -10,7 +10,7 @@
  * on the list passes through to the network untouched and uncached.
  */
 
-const CACHE = 'lilli-se-demo-v3';
+const CACHE = 'lilli-se-demo-v4';
 
 const SHELL = [
   './',
@@ -22,6 +22,8 @@ const SHELL = [
   './icons/lilli-192.png',
   './icons/lilli-512.png',
   './icons/apple-touch-icon.png',
+  './icons/lilli-avatar.png',
+  './icons/vanilli-os-mark.svg',
 ];
 
 const SHELL_URLS = new Set(SHELL.map((p) => new URL(p, self.location).href));

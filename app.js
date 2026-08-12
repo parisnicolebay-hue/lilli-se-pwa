@@ -462,7 +462,9 @@
     if (!j) {
       const c = state.completed;
       const standalone = window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
-      return '<div class="app-brand"><h1 class="app-brand__name" tabindex="-1">' + esc(t('lilli.appName')) + '</h1>' +
+      return '<div class="app-brand">' +
+        '<img class="lilli-avatar lilli-avatar--lg" src="icons/lilli-avatar.png" alt="" width="96" height="96">' +
+        '<h1 class="app-brand__name" tabindex="-1">' + esc(t('lilli.appName')) + '</h1>' +
         '<p class="lilli-head__office">' + esc(t('demo.office')) + '</p></div>' +
         '<ol class="lilli-transcript">' +
         bubble({ who: 'lilli', keys: ['lilli.conv.greeting'] }) +
@@ -481,8 +483,10 @@
           : '');
     }
 
-    return '<div class="lilli-head"><p class="lilli-head__name">' + esc(t('lilli.appName')) + '</p>' +
-      '<p class="lilli-head__office">' + esc(t('demo.office')) + '</p></div>' +
+    return '<div class="lilli-head lilli-head--row">' +
+      '<img class="lilli-avatar lilli-avatar--sm" src="icons/lilli-avatar.png" alt="" width="44" height="44">' +
+      '<div><p class="lilli-head__name">' + esc(t('lilli.appName')) + '</p>' +
+      '<p class="lilli-head__office">' + esc(t('demo.office')) + '</p></div></div>' +
       (j.resumed ? '<p class="lilli-note">' + esc(t('demo.resumed')) + '</p>' : '') +
       (j.emergency ? '' :
         '<p class="lilli__progress">' + esc(t('lilli.conv.progress', { current: j.questionCount })) + '</p>') +
@@ -500,7 +504,8 @@
       '<div class="lilli__disclaimers">' +
       '<p>' + esc(t('lilli.conv.notADentist')) + '</p>' +
       '<p>' + esc(t('lilli.noPersonalData')) + '</p>' +
-      '<p>' + esc(t('demo.about')) + '</p></div>' +
+      '<p>' + esc(t('demo.about')) + '</p>' +
+      '<p class="lilli-footmark"><img src="icons/vanilli-os-mark.svg" alt="Vanilli OS" width="18" height="19"> vanillios.com</p></div>' +
       '<div class="lilli-locale"><label for="locale">' + esc(t('lilli.language')) + '</label>' +
       '<select id="locale" class="lilli-locale__select">' +
       LOCALES.map(function (l) {
