@@ -593,3 +593,13 @@
   color: var(--v-muted); font-size: 0.8rem;
 }
 .lilli-footmark img { display: block; opacity: 0.85; }
+
+/* The portrait that welcomes the patient on the home screen. */
+.lilli-hero {
+  display: block; width: 100%; height: auto;
+  max-width: 21rem;
+  border: 1px solid var(--v-line, #E7DFD1);
+  border-radius: 18px;
+  margin: 0 0 1.1rem;
+  background: #fff;
+}

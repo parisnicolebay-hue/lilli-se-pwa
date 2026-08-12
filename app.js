@@ -466,6 +466,7 @@
         '<img class="lilli-avatar lilli-avatar--lg" src="icons/lilli-avatar.png" alt="" width="96" height="96">' +
         '<h1 class="app-brand__name" tabindex="-1">' + esc(t('lilli.appName')) + '</h1>' +
         '<p class="lilli-head__office">' + esc(t('demo.office')) + '</p></div>' +
+        '<img class="lilli-hero" src="icons/lilli-hero.jpg" alt="" width="720" height="900">' +
         '<ol class="lilli-transcript">' +
         bubble({ who: 'lilli', keys: ['lilli.conv.greeting'] }) +
         bubble({ who: 'lilli', text: t('lilli.conv.greetingSub') }) +
