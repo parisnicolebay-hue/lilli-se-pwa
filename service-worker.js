@@ -10,7 +10,7 @@
  * on the list passes through to the network untouched and uncached.
  */
 
-const CACHE = 'lilli-se-demo-v2';
+const CACHE = 'lilli-se-demo-v3';
 
 const SHELL = [
   './',

@@ -482,3 +482,102 @@
 .lilli-demo-toggle { width: auto; }
 .app-status__heading { margin: 0; }
 .lilli-noscript { max-width: 34rem; margin: 2rem auto; padding: 0 1.25rem; }
+
+/* ── vanillios.com reskin ────────────────────────────────────────────────────
+ * Taken from the site's own published tokens (captured live):
+ *   --v-warm-white #FBF9F4  --v-cream #F4EFE6   --v-taupe #B9AC97
+ *   --v-line #E7DFD1        --v-charcoal #2C2E33 --v-navy #16294D
+ *   --v-navy-deep #0D1A30   --v-sage #88A092     --v-sage-deep #6E8A77
+ *   --vanilli-teal #2E9C95  --vanilli-sand #D8A96C --ivory #F7F4EC
+ *   headings: Fraunces/Georgia serif · body: Inter/system sans
+ *   radius 18px · pill buttons 100px
+ * Safety colours (emergency red, time-critical amber) stay unbranded. */
+
+.app {
+  --v-taupe: #B9AC97;
+  --v-sage: #88A092;
+  --v-sage-deep: #6E8A77;
+  --v-line: #E7DFD1;
+  --v-ink: #2C2E33;
+  --v-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app-body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.app-body, .app { color: var(--v-ink); }
+
+/* Headings in the site's serif, navy. */
+.app h1, .app h2,
+.app .lilli-guidance__heading,
+.app .app-status__heading,
+.app .lilli-done h2 {
+  font-family: var(--v-serif);
+  color: var(--v-navy);
+  font-weight: 600;
+}
+
+/* The synthetic banner: still unmissable, no longer off-palette. */
+.app .lilli__banner,
+.lilli__banner {
+  background: var(--v-cream, #F4EFE6);
+  border: 1px solid var(--v-sand, #D8A96C);
+  border-radius: 18px;
+  color: #7C5A24;
+  letter-spacing: 0.03em;
+}
+
+/* Speaker labels: Lilli in the site's sage, the patient in muted slate. */
+.app .lilli-msg--lilli .lilli-msg__who { color: var(--v-sage-deep); }
+.app .lilli-msg--patient .lilli-msg__who { color: var(--v-muted); }
+.app .lilli__progress { color: var(--v-muted); }
+
+/* Cards on warm white: hairline #E7DFD1, 18px corners. */
+.app .lilli-msg__bubble,
+.app .lilli-choice,
+.app .lilli-scale__n,
+.app .lilli__opening,
+.app .lilli-review__row,
+.app .app-status,
+.app .app-install,
+.app .lilli-done,
+.app .lilli__disclaimers,
+.app .app-offline { border-color: var(--v-line); }
+.app .lilli__opening { border-radius: 18px; background: #fff; }
+
+/* Buttons: the site's two CTAs — navy pill with ivory text, quiet outline. */
+.app .lilli-btn {
+  background: var(--v-navy);
+  border-color: var(--v-navy);
+  color: var(--v-ivory);
+  border-radius: 100px;
+  padding-left: 1.5rem; padding-right: 1.5rem;
+}
+.app .lilli-btn:hover:not([disabled]) { background: var(--v-navy-deep); border-color: var(--v-navy-deep); }
+.app .lilli-btn--quiet {
+  background: transparent;
+  color: var(--v-navy);
+  border-color: var(--v-line);
+}
+.app .lilli-btn--quiet:hover:not([disabled]) { border-color: var(--v-navy); background: transparent; }
+.app .lilli-btn[disabled] { opacity: 0.35; }
+
+/* Choices: white cards, teal on hover and selection — the site's accent. */
+.app .lilli-choice:hover { border-color: var(--v-teal); }
+.app .lilli-choice--on,
+.app .lilli-choice[aria-pressed="true"] {
+  border-color: var(--v-teal);
+  background: #E9F5F3;
+  color: var(--v-navy);
+}
+.app .lilli-scale__n:hover { border-color: var(--v-teal); }
+
+/* The demo toggle reads as the site's teal secondary, not a patient answer. */
+.app .lilli-demo-toggle { border-radius: 100px; color: var(--v-muted); }
+.app .lilli-demo-toggle.lilli-choice--on { color: var(--v-navy); }
+
+/* Sticky bars sit on the warm white with the site hairline. */
+.app .lilli-composer .lilli-actions,
+.app .lilli__actions { background: var(--v-warm-white); border-top-color: var(--v-line); }
+
+/* Locale switch: quiet pill. */
+.app .lilli-locale { color: var(--v-muted); }
+.app .lilli-locale__select { border-radius: 100px; border-color: var(--v-line); background: #fff; }
