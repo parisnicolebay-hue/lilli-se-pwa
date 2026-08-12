@@ -1,0 +1,484 @@
+/* Lilli Sweden — standalone synthetic demonstration.
+ * SYNTETISK DEMONSTRATION — inga verkliga patientuppgifter.
+ * The patient surface (lilli) and the installed-app chrome + vanillios.com
+ * brand (app), combined for the static demo. */
+/* ── Lilli — the patient surface ───────────────────────────────────────────
+   Deliberately calmer and wider-spaced than the staff application. A patient
+   uses this once, on a phone, possibly in pain; a staff member uses the other
+   one all day. They should not look the same. */
+
+.lilli-body {
+  margin: 0;
+  background: #f6f4ef;
+  color: #1d2b26;
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.lilli { max-width: 34rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+
+.lilli__banner {
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 0.9rem;
+  background: #fdf6ec;
+  border: 1px solid #8a6d3b;
+  border-radius: 6px;
+  color: #8a6d3b;
+  font-size: 0.85rem;
+}
+
+.lilli__brand { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.25rem; }
+.lilli__brand-name { font-size: 1.5rem; font-weight: 700; margin: 0; color: #2d5c4d; }
+.lilli__office { margin: 0 0 1.5rem; color: #5a6b65; font-size: 0.95rem; }
+
+.lilli__progress { margin: 0 0 0.5rem; color: #5a6b65; font-size: 0.85rem; }
+.lilli h1 { font-size: 1.45rem; margin: 0 0 0.4rem; line-height: 1.25; }
+.lilli__intro { margin: 0 0 1.5rem; color: #41524c; }
+
+/* Big, thumb-sized choices — this is used one-handed on a phone. */
+.lilli__choices { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: 0.6rem; }
+.lilli__choice {
+  display: block; width: 100%; text-align: left;
+  padding: 0.95rem 1.1rem;
+  background: #fff; border: 2px solid #d9d5cc; border-radius: 10px;
+  font: inherit; color: inherit; cursor: pointer;
+}
+.lilli__choice:hover { border-color: #2d5c4d; }
+.lilli__choice:focus-visible { outline: 3px solid #2d5c4d; outline-offset: 2px; }
+.lilli__choice[aria-pressed="true"] { border-color: #2d5c4d; background: #eef4f1; font-weight: 600; }
+
+/*
+ * The action bar sticks to the bottom of the viewport.
+ *
+ * Ten concern choices at 60px each put "Nästa" around 1000px down the
+ * document — below the fold on a 720px desktop viewport and well below it on a
+ * phone. A patient who has answered the question could not see the way
+ * forward. Sticky keeps both controls reachable without shortening the
+ * choices, which are deliberately large enough to tap.
+ *
+ * `bottom: -1px` closes the hairline gap some browsers leave under a sticky
+ * element at the end of a scroll.
+ */
+.lilli__actions {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  margin-top: 1.5rem;
+  position: sticky; bottom: -1px; z-index: 2;
+  padding: 0.9rem 0 1rem;
+  background: #f6f4ef;
+  border-top: 1px solid #e2ded4;
+}
+
+/* On a short viewport the bar would cover as much as it reveals. */
+@media (max-height: 420px) {
+  .lilli__actions { position: static; }
+}
+.lilli__button {
+  padding: 0.85rem 1.5rem; border-radius: 8px; border: 2px solid #2d5c4d;
+  background: #2d5c4d; color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.lilli__button:focus-visible { outline: 3px solid #1d2b26; outline-offset: 2px; }
+.lilli__button--quiet { background: transparent; color: #2d5c4d; }
+.lilli__button[disabled] { opacity: 0.6; cursor: default; }
+
+.lilli__openings { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; gap: 0.5rem; }
+.lilli__opening {
+  padding: 0.7rem 0.9rem; background: #fff;
+  border: 1px solid #d9d5cc; border-radius: 8px; font-size: 0.95rem;
+}
+.lilli__empty { color: #5a6b65; font-style: italic; }
+
+.lilli__summary { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; gap: 0.5rem; }
+.lilli__summary div { display: flex; justify-content: space-between; gap: 1rem;
+  padding: 0.6rem 0; border-bottom: 1px solid #e4e0d8; }
+.lilli__summary dt { color: #5a6b65; }
+.lilli__summary dd { margin: 0; font-weight: 600; text-align: right; }
+
+.lilli__reference {
+  font-family: ui-monospace, monospace; font-size: 1.35rem; font-weight: 700;
+  letter-spacing: 0.05em; padding: 0.9rem 1.1rem; background: #fff;
+  border: 2px dashed #2d5c4d; border-radius: 8px; display: inline-block;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.lilli__disclaimers { margin: 2rem 0 0; padding: 1rem 1.1rem;
+  background: #eef1ef; border-radius: 8px; }
+.lilli__disclaimers p { margin: 0 0 0.6rem; font-size: 0.87rem; color: #41524c; }
+.lilli__disclaimers p:last-child { margin-bottom: 0; }
+
+.lilli__error { padding: 0.85rem 1rem; background: #fdeeee; border: 1px solid #a94442;
+  border-radius: 8px; color: #a94442; margin: 0 0 1.25rem; }
+
+.lilli__locale { margin-top: 2rem; display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.9rem; color: #5a6b65; }
+
+/* ── The conversation ───────────────────────────────────────────────────────
+ *
+ * A transcript with a composer under it. Mobile-first: the composer's controls
+ * are thumb-sized, and the whole column is capped at reading width so a phone
+ * and a laptop show the same conversation rather than the same layout
+ * stretched.
+ */
+
+.lilli-head { margin: 0 0 1rem; }
+.lilli-head__name { margin: 0; font-size: 1.35rem; font-weight: 700; color: #2d5c4d; }
+.lilli-head__office { margin: 0.1rem 0 0; color: #5c6b64; font-size: 0.92rem; }
+
+.lilli-transcript {
+  list-style: none; margin: 0 0 1rem; padding: 0;
+  display: flex; flex-direction: column; gap: 0.7rem;
+}
+
+.lilli-msg { display: flex; flex-direction: column; max-width: 92%; }
+.lilli-msg--lilli { align-self: flex-start; }
+.lilli-msg--patient { align-self: flex-end; align-items: flex-end; }
+
+.lilli-msg__who {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #7b8a83; margin-bottom: 0.2rem;
+}
+
+.lilli-msg__bubble {
+  padding: 0.7rem 0.95rem; border-radius: 14px;
+  background: #fff; border: 1px solid #e2ded4;
+  /* Answers are short; a question can be three sentences. Preserving the
+   * newlines the copy actually contains is cheaper than splitting it. */
+  white-space: pre-wrap;
+}
+.lilli-msg--patient .lilli-msg__bubble {
+  background: #2d5c4d; color: #fff; border-color: #2d5c4d;
+}
+
+/* The emergency turn must not look like the others. */
+.lilli-msg--emergency .lilli-msg__bubble {
+  background: #fdecea; border: 2px solid #a4272b; color: #6d1a1d; font-weight: 600;
+}
+
+.lilli-typing { margin: 0 0 0.6rem; color: #7b8a83; font-size: 0.88rem; font-style: italic; }
+
+.lilli-composer { margin-top: 0.25rem; }
+
+.lilli-choices { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.lilli-choice {
+  width: 100%; min-height: 48px; padding: 0.7rem 1rem; text-align: left;
+  border: 1px solid #cfd8d3; border-radius: 10px; background: #fff;
+  font: inherit; cursor: pointer;
+}
+.lilli-choice:hover { border-color: #2d5c4d; }
+.lilli-choice:focus-visible { outline: 3px solid #1d2b26; outline-offset: 2px; }
+.lilli-choice--on { border-color: #2d5c4d; background: #eaf2ee; font-weight: 600; }
+.lilli-choice[disabled] { opacity: 0.55; cursor: default; }
+
+/* 0–10 as buttons: a slider is hard to hit accurately, and harder in pain. */
+.lilli-scale {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.4rem;
+}
+.lilli-scale__n {
+  min-height: 48px; border: 1px solid #cfd8d3; border-radius: 10px;
+  background: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.lilli-scale__n:focus-visible { outline: 3px solid #1d2b26; outline-offset: 2px; }
+
+.lilli-input-row { display: grid; gap: 0.5rem; }
+.lilli-input__label { font-size: 0.9rem; color: #5c6b64; }
+.lilli-input {
+  min-height: 48px; padding: 0.6rem 0.8rem; font: inherit;
+  border: 1px solid #cfd8d3; border-radius: 10px; background: #fff;
+}
+.lilli-input:focus-visible { outline: 3px solid #1d2b26; outline-offset: 1px; }
+
+.lilli-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.8rem; }
+
+/* Inside the composer the action row sticks to the viewport bottom, exactly
+ * as the picker's bar does and for the same reason: the safety screen offers
+ * eleven choices, and "none of these apply" must not sit below a fold a
+ * frightened patient has to find. Choices scroll; the way forward does not. */
+.lilli-composer .lilli-actions {
+  position: sticky; bottom: -1px; z-index: 2;
+  padding: 0.9rem 0 1rem;
+  background: #f6f4ef;
+  border-top: 1px solid #e2ded4;
+}
+@media (max-height: 420px) {
+  .lilli-composer .lilli-actions { position: static; }
+}
+.lilli-btn {
+  min-height: 48px; padding: 0.7rem 1.3rem; border-radius: 10px;
+  border: 2px solid #2d5c4d; background: #2d5c4d; color: #fff;
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.lilli-btn--quiet { background: transparent; color: #2d5c4d; }
+.lilli-btn[disabled] { opacity: 0.55; cursor: default; }
+.lilli-btn:focus-visible { outline: 3px solid #1d2b26; outline-offset: 2px; }
+
+/* Back and restart sit below the composer and above the disclaimers: reachable
+ * without being the first thing a thumb lands on. */
+.lilli-nav {
+  display: flex; gap: 0.6rem; margin-top: 1rem;
+  padding-top: 0.8rem; border-top: 1px solid #e2ded4;
+}
+
+.lilli-note { margin: 0.6rem 0 0; color: #5c6b64; font-size: 0.88rem; }
+
+.lilli-review { margin: 0; display: grid; gap: 0.5rem; }
+.lilli-review__row {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 0.6rem;
+  padding: 0.5rem 0.7rem; background: #fff; border: 1px solid #e2ded4; border-radius: 10px;
+}
+.lilli-review dt { margin: 0; color: #5c6b64; font-size: 0.88rem; }
+.lilli-review dd { margin: 0; font-weight: 600; }
+
+.lilli-done {
+  margin-top: 1.2rem; padding: 1rem; border-radius: 12px;
+  background: #eaf2ee; border: 1px solid #b9d2c6;
+}
+
+.lilli-locale { display: flex; align-items: center; gap: 0.6rem; margin-top: 1.5rem; }
+.lilli-locale__select {
+  min-height: 44px; padding: 0.4rem 0.6rem; font: inherit;
+  border: 1px solid #cfd8d3; border-radius: 8px; background: #fff;
+}
+
+@media (max-width: 380px) {
+  .lilli-review__row { grid-template-columns: 1fr; gap: 0.15rem; }
+  .lilli-scale { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ── Time-critical guidance ─────────────────────────────────────────────────
+ *
+ * The knocked-out-tooth panel. Deliberately louder than a chat bubble and
+ * quieter than the emergency alert: it is urgent, but it is not 112, and the
+ * two must not look the same or the distinction stops meaning anything.
+ */
+.lilli-guidance {
+  margin: 0 0 0.5rem;
+  padding: 1rem 1.1rem;
+  border: 2px solid #b06a1a;
+  border-left-width: 6px;
+  border-radius: 12px;
+  background: #fdf4e8;
+  color: #4a2f0c;
+}
+
+.lilli-guidance__badge {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #8a4f0d;
+}
+
+.lilli-guidance__heading { margin: 0 0 0.7rem; font-size: 1.1rem; }
+
+/* The instruction itself carries the newlines the source wording has. */
+.lilli-guidance__do { margin: 0 0 0.8rem; white-space: pre-wrap; font-weight: 600; }
+.lilli-guidance__speed { margin: 0 0 0.6rem; }
+.lilli-guidance__seek { margin: 0 0 0.6rem; }
+
+.lilli-guidance__source {
+  margin: 0.8rem 0 0; padding-top: 0.6rem;
+  border-top: 1px solid #e3cba6;
+  font-size: 0.8rem; color: #7a5a2d;
+}
+
+/* Time-critical on the review screen, so it reads first. */
+.lilli-review__row--critical {
+  border-color: #b06a1a;
+  background: #fdf4e8;
+}
+.lilli-review__row--critical dt { color: #8a4f0d; font-weight: 700; }
+/* Lilli Sweden — the app shell's own chrome.
+ *
+ * SYNTHETIC TEST DATA ONLY — NOT FOR REAL PATIENT USE.
+ *
+ * Everything conversational is styled by lilli.css and shared with the web
+ * page. This file adds only what an INSTALLED app needs: safe-area padding so
+ * the action bar clears the iPhone home indicator, a top bar, the home menu,
+ * and the offline panel.
+ */
+
+.app-body { padding: 0; }
+
+.app {
+  max-width: 34rem; margin: 0 auto;
+  padding: calc(0.75rem + env(safe-area-inset-top)) 1.25rem
+           calc(1.5rem + env(safe-area-inset-bottom));
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.app-top {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin: 0 0 0.75rem;
+}
+.app-top__back {
+  border: 0; background: none; color: #2d5c4d;
+  font: inherit; font-weight: 600; cursor: pointer;
+  min-height: 44px; padding: 0.4rem 0.4rem 0.4rem 0;
+}
+.app-top__title { margin: 0; font-size: 1.2rem; color: #2d5c4d; }
+.app-top__title:focus { outline: none; }
+
+.app-brand { margin: 0.5rem 0 1.25rem; }
+.app-brand__name { margin: 0; font-size: 1.8rem; font-weight: 700; color: #2d5c4d; }
+.app-brand__name:focus { outline: none; }
+
+.app-menu { display: grid; gap: 0.6rem; margin: 0 0 1.25rem; }
+.app-menu__primary { font-size: 1.05rem; }
+
+.app-install {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin: 0 0 1rem; padding: 0.7rem 0.9rem;
+  background: #eaf2ee; border: 1px solid #b9d2c6; border-radius: 10px;
+}
+.app-install p { margin: 0; font-size: 0.9rem; }
+.app-install--note { display: block; color: #5c6b64; }
+
+.app-offline {
+  margin: 0 0 0.9rem; padding: 0.8rem 1rem;
+  border: 2px solid #8a6d3b; border-radius: 10px; background: #fdf6ec;
+  display: grid; gap: 0.6rem;
+}
+.app-offline p { margin: 0; }
+
+.app-status {
+  padding: 1rem; border-radius: 12px;
+  background: #fff; border: 1px solid #e2ded4;
+  display: grid; gap: 0.5rem;
+}
+.app-status__line { margin: 0; font-weight: 600; }
+.app-status__time { margin: 0; font-size: 1.1rem; }
+
+/* The sticky action bar inherits from lilli.css; inside the installed app it
+ * must also clear the home indicator. */
+.app .lilli__actions, .app .lilli-actions {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+/* ── The vanillios.com identity ──────────────────────────────────────────────
+ *
+ * The brand tokens below are taken from vanillios.com's own published CSS
+ * variables (--vanilli-navy #16294D, --vanilli-teal #2E9C95, --vanilli-ivory
+ * #F7F4EC, --vanilli-sand #D8A96C, radius 18px, pill buttons, Fraunces serif
+ * headings) — the product site Lilli actually belongs to.
+ *
+ * Scoped under .app on purpose: the PWA carries the product brand; the plain
+ * web page at /lilli and the Vanilli OS staff UI keep their own faces. Safety
+ * styling is deliberately NOT rebranded — the emergency red and the amber
+ * synthetic banner mean something, and a brand may not soften either.
+ *
+ * Fraunces is not self-hosted and the CSP allows no external fonts, so
+ * Georgia stands in — same warmth, zero bytes, no third-party request.
+ */
+
+.app {
+  --v-navy: #16294D;
+  --v-navy-deep: #0D1A30;
+  --v-teal: #2E9C95;
+  --v-teal-bright: #3FBFB4;
+  --v-ivory: #F7F4EC;
+  --v-warm-white: #FBF9F4;
+  --v-cream: #F4EFE6;
+  --v-sand: #D8A96C;
+  --v-ink: #1B2433;
+  --v-muted: #5B6678;
+  --v-line: #E2DCCC;
+  --v-serif: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+.app-body { background: var(--v-warm-white, #FBF9F4); color: #1B2433; }
+
+/* Brand marks and headings in the serif the site leads with. */
+.app .app-brand__name,
+.app .app-top__title {
+  font-family: var(--v-serif);
+  color: var(--v-navy);
+  letter-spacing: 0.01em;
+}
+.app .app-brand__name { font-size: 2rem; }
+.app .lilli-head__name { font-family: var(--v-serif); color: var(--v-navy); }
+.app .lilli-head__office, .app .lilli-note, .app .app-install--note { color: var(--v-muted); }
+.app .app-top__back { color: var(--v-navy); }
+
+/* Pill buttons, navy primary, quiet outline — the site's two CTAs. */
+.app .lilli-btn {
+  border-radius: 100px;
+  border-color: var(--v-navy);
+  background: var(--v-navy);
+  color: var(--v-ivory);
+}
+.app .lilli-btn--quiet {
+  background: transparent;
+  color: var(--v-navy);
+  border-color: var(--v-line);
+}
+.app .lilli-btn:focus-visible,
+.app .lilli-choice:focus-visible,
+.app .lilli-scale__n:focus-visible,
+.app .lilli-input:focus-visible,
+.app .lilli-locale__select:focus-visible {
+  outline: 3px solid var(--v-teal);
+  outline-offset: 2px;
+}
+
+/* Choices: warm cards on ivory, teal selection. */
+.app .lilli-choice {
+  border-radius: 18px;
+  border-color: var(--v-line);
+  background: #fff;
+}
+.app .lilli-choice:hover { border-color: var(--v-teal); }
+.app .lilli-choice--on {
+  border-color: var(--v-teal);
+  background: #E7F3F1;
+}
+.app .lilli-scale__n { border-radius: 18px; border-color: var(--v-line); }
+.app .lilli-input { border-radius: 18px; border-color: var(--v-line); }
+
+/* The conversation: Lilli on warm white, the patient in brand navy. */
+.app .lilli-msg__bubble { border-color: var(--v-line); border-radius: 18px; }
+.app .lilli-msg--patient .lilli-msg__bubble {
+  background: var(--v-navy);
+  border-color: var(--v-navy);
+  color: var(--v-ivory);
+}
+.app .lilli-msg__who { color: var(--v-muted); }
+.app .lilli-typing { color: var(--v-muted); }
+
+/* Panels and chrome. */
+.app .app-status, .app .app-install {
+  border-radius: 18px;
+  border-color: var(--v-line);
+}
+.app .app-install { background: var(--v-cream); }
+.app .app-status { background: #fff; }
+.app .lilli__disclaimers { background: var(--v-cream); border-radius: 18px; }
+.app .lilli-composer .lilli-actions,
+.app .lilli__actions { background: var(--v-warm-white); border-top-color: var(--v-line); }
+.app .lilli-nav { border-top-color: var(--v-line); }
+.app .lilli-opening { border-color: var(--v-line); border-radius: 18px; }
+.app .lilli-review__row { border-color: var(--v-line); border-radius: 18px; }
+.app .lilli-review dt { color: var(--v-muted); }
+.app .lilli-done {
+  background: var(--v-cream);
+  border-color: var(--v-line);
+  border-radius: 18px;
+}
+.app .lilli__reference { border-color: var(--v-navy); border-radius: 12px; }
+.app .lilli-locale__select { border-radius: 100px; border-color: var(--v-line); }
+
+/* The accent the site uses for warmth: a teal underline on the brand row and
+ * the sand heart beside Lilli's name — vanillios.com writes it "Lilli♥". */
+.app .app-brand__name::after {
+  content: " \2665";
+  color: var(--v-sand);
+  font-size: 0.7em;
+  vertical-align: 0.15em;
+}
+
+/* NOT rebranded, on purpose: the amber synthetic banner, the red emergency
+ * bubble, and the time-critical guidance panel keep their safety colours. */
+
+/* Demo-specific chrome (no inline styles: the CSP forbids them). */
+.lilli-msg--full { max-width: 100%; }
+.lilli-demo-toggle { width: auto; }
+.app-status__heading { margin: 0; }
+.lilli-noscript { max-width: 34rem; margin: 2rem auto; padding: 0 1.25rem; }

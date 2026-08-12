@@ -1,16 +1,35 @@
 # lilli-se-pwa
 
-Static front door for **lilli-se.vanillios.com**, hosted on GitHub Pages the
-same way as `911dentist-pwa` (app.911dentist.org) and `today-tv-pwa`
-(app.ontodaytv.com).
+**Lilli Sweden — standalone synthetic demonstration.**
+SYNTETISK DEMONSTRATION — inga verkliga patientuppgifter.
 
-**This repo is public. It must never contain:** application code, patient or
-synthetic-patient data, credentials, user lists, or a service worker.
+An installable, fully static demo of the Lilli patient conversation for
+**lilli-se.vanillios.com**, hosted on GitHub Pages in the same deployment
+style as the other public demo apps on this account.
 
-Today it serves a bilingual private-pilot notice (noindex, nofollow, robots
-disallow). The Lilli Sweden pilot application itself is developed privately
-and will be hosted separately; when it goes live, this address moves (or
-links) to that deployment.
+## What it is
 
-No service worker is registered here on purpose: an installed worker on this
-subdomain would fight the real app when hosting switches.
+Scripted synthetic patient journeys — choice buttons only, no free-text
+clinical entry — through concern, safety screening, symptom questions,
+urgency, and a simulated "send" that issues an unmistakably synthetic
+reference such as `TEST-PERSON-001`. Swedish by default with an English
+(en-SE) switch. Emergency answers stop the ordinary conversation and show a
+`role="alert"` panel with Swedish 112 guidance.
+
+## What it is not
+
+- **No backend.** Nothing is transmitted anywhere; everything happens in the
+  browser. There is no API, database, analytics, or tracking of any kind.
+- **No personal data.** The demo never asks for names, personnummer, phone
+  numbers, email, photographs, or any real patient information.
+- **Not a care service.** The page says so, in both languages, at all times.
+
+## Files
+
+`index.html` · `app.css` · `app.js` · `i18n.js` · `manifest.webmanifest` ·
+`service-worker.js` · `icons/` (192, 512, apple-touch) · `robots.txt` ·
+`CNAME`
+
+All paths are relative, so the app runs identically from a local static
+server and from the custom-domain root. The service worker caches only the
+enumerated static shell — never anything else.

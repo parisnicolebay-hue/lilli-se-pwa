@@ -1,0 +1,15 @@
+{
+  "name": "Lilli — syntetisk demonstration",
+  "short_name": "Lilli",
+  "description": "Lilli Sweden patient concierge — standalone synthetic demonstration. SYNTETISK DEMONSTRATION: inga verkliga patientuppgifter.",
+  "lang": "sv-SE",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF9F4",
+  "theme_color": "#16294D",
+  "icons": [
+    { "src": "icons/lilli-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/lilli-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

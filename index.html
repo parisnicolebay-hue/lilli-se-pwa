@@ -1,58 +1,36 @@
-<!doctype html>
-<html lang="sv" dir="ltr">
+<!DOCTYPE html>
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <!--
+    Lilli Sweden — standalone synthetic demonstration.
+
+    SYNTETISK DEMONSTRATION — inga verkliga patientuppgifter.
+
+    A completely static, installable demo of the Lilli Sweden patient
+    conversation. Scripted synthetic journeys only. No backend, no API,
+    no database, no analytics: nothing leaves the browser.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#16294D">
-  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'">
-  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <title>Lilli — privat pilot</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Lilli">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/lilli-192.png">
+  <title>Lilli — syntetisk demonstration</title>
+  <link rel="stylesheet" href="app.css">
 </head>
-<body>
-  <main class="door">
-    <div class="mark" aria-hidden="true">
-      <img src="icons/icon.svg" alt="" width="72" height="72">
-    </div>
-
-    <p class="badge">SYNTETISK DEMONSTRATION &middot; SYNTHETIC DEMONSTRATION</p>
-
-    <h1>Lilli</h1>
-    <p class="tag">Digital tandv&aring;rdskoncierge &mdash; pilot f&ouml;r Sverige</p>
-
-    <section lang="sv">
-      <h2>Privat pilot</h2>
-      <p>
-        Den h&auml;r adressen &auml;r reserverad f&ouml;r en st&auml;ngd pilot med
-        enbart inbjudna anv&auml;ndare och enbart syntetisk demonstrationsdata.
-        Inloggningen &ouml;ppnar h&auml;r n&auml;r pilotmilj&ouml;n har driftsatts.
-      </p>
-      <p class="note">
-        Detta &auml;r inte en v&aring;rdtj&auml;nst. Vid tandv&aring;rdsbesv&auml;r,
-        kontakta din tandv&aring;rdsmottagning eller 1177. Vid livshotande
-        tillst&aring;nd, ring <strong>112</strong>.
-      </p>
-    </section>
-
-    <section lang="en">
-      <h2>Private pilot</h2>
-      <p>
-        This address is reserved for a closed pilot with invited users only and
-        synthetic demonstration data only. Sign-in opens here once the pilot
-        environment is live.
-      </p>
-      <p class="note">
-        This is not a care service. For dental concerns in Sweden, contact your
-        dental clinic or 1177. In a life-threatening emergency, call
-        <strong>112</strong>.
-      </p>
-    </section>
-
-    <footer>
-      <p>vanillios.com &mdash; Lilli welcomes the patient. Vanilli&nbsp;OS runs the practice.</p>
-    </footer>
-  </main>
+<body class="lilli-body app-body">
+  <main id="app" class="app"></main>
+  <noscript>
+    <p class="lilli-noscript">Lilli behöver JavaScript. / Lilli requires JavaScript.</p>
+  </noscript>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
