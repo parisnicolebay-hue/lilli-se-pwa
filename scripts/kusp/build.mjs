@@ -260,6 +260,7 @@ export function build({ write = true } = {}) {
     throw new Error('KUSP validation failed:\n  - ' + problems.join('\n  - '));
   }
 
+  const manifestGeneratedAt = new Date().toISOString();
   const manifest = {
     source: 'TLV',
     dataset: 'KUSP',
@@ -270,7 +271,7 @@ export function build({ write = true } = {}) {
     effective_to: REGULATION.effectiveTo,
     supersededBy: REGULATION.supersededBy,
     retrieved_at: retrievedMeta.retrievedAt,
-    generated_at: new Date().toISOString(),
+    generated_at: manifestGeneratedAt,
     schema_version: SCHEMA_VERSION,
     source_urls: Object.values(SOURCES).map((s) => s.url),
     source_hashes: { [SOURCES.referencePrices.id]: sha256(rawBuffer) },
@@ -309,13 +310,50 @@ export function build({ write = true } = {}) {
     'questions-index.json': { schema_version: SCHEMA_VERSION, items: [], availability: manifest.availability.questions },
   };
 
+  // A portable artefact for consumers outside this repo — notably the private
+  // Vanilli OS Sweden backend, which must import a versioned dataset and must
+  // NEVER scrape this PWA. Only verified fields travel: codes, titles, series,
+  // both prices, and provenance. No inferred relationship can leave here
+  // because none exists.
+  const exportArtefact = {
+    artefact: 'tlv-atgarder',
+    schema_version: SCHEMA_VERSION,
+    regulation: REGULATION.id,
+    regulation_title: REGULATION.title,
+    effective_from: REGULATION.effectiveFrom,
+    effective_to: REGULATION.effectiveTo,
+    superseded_by: REGULATION.supersededBy,
+    source: 'TLV',
+    source_url: SOURCES.referencePrices.url,
+    source_sha256: sha256(rawBuffer),
+    retrieved_at: retrievedMeta.retrievedAt,
+    generated_at: manifestGeneratedAt,
+    verified_fields: ['code', 'title', 'series', 'general_reference_price_ore',
+      'specialist_reference_price_ore', 'source', 'regulation', 'effective_from'],
+    unverified_absent: ['tillstand', 'tillstand_atgard_relationships', 'rule_paragraphs',
+      'handbook_logic', 'answered_questions'],
+    procedures: normalised.atgarder.map((a) => ({
+      procedure_code: a.code,
+      title: a.title,
+      series: a.series,
+      series_title: a.seriesTitle,
+      general_reference_price_ore: a.referencePriceOre,
+      specialist_reference_price_ore: a.specialistReferencePriceOre,
+    })),
+  };
+
   if (write) {
     fs.mkdirSync(OUT_DIR, { recursive: true });
+    const exportDir = path.join(ROOT, 'data', 'export');
+    fs.mkdirSync(exportDir, { recursive: true });
+    fs.writeFileSync(
+      path.join(exportDir, 'tlv-atgarder-' + REGULATION.id.replace(/[^A-Za-z0-9]+/g, '-') + '.json'),
+      stableStringify(exportArtefact));
     for (const [name, value] of Object.entries(datasets)) {
       fs.writeFileSync(path.join(OUT_DIR, name), stableStringify(value));
     }
   }
-  return { manifest, datasets, problems };
+  return { manifest, datasets, exportArtefact, problems };
 }
 
 /* ── CLI ──────────────────────────────────────────────────────────────────── */

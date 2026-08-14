@@ -1,0 +1,1636 @@
+{
+  "artefact": "tlv-atgarder",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "generated_at": "2026-08-14T01:57:26.131Z",
+  "procedures": [
+    {
+      "general_reference_price_ore": 110000,
+      "procedure_code": "101",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 110000,
+      "title": "Basundersökning, utförd av tandläkare"
+    },
+    {
+      "general_reference_price_ore": 44500,
+      "procedure_code": "103",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 58500,
+      "title": "Kompletterande eller akut undersökning, utförd av tandläkare"
+    },
+    {
+      "general_reference_price_ore": 127500,
+      "procedure_code": "107",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 197000,
+      "title": "Omfattande undersökning, utförd av tandläkare"
+    },
+    {
+      "general_reference_price_ore": 189500,
+      "procedure_code": "108",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 296000,
+      "title": "Utredning inklusive undersökning, utförd av tandläkare"
+    },
+    {
+      "general_reference_price_ore": 98500,
+      "procedure_code": "111",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": null,
+      "title": "Basundersökning, utförd av tandhygienist"
+    },
+    {
+      "general_reference_price_ore": 128500,
+      "procedure_code": "112",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": null,
+      "title": "Basundersökning med fullständig parodontal undersökning, utförd av tandhygienist"
+    },
+    {
+      "general_reference_price_ore": 53500,
+      "procedure_code": "113",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": null,
+      "title": "Akut eller annan undersökning, utförd av tandhygienist"
+    },
+    {
+      "general_reference_price_ore": 78500,
+      "procedure_code": "114",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": null,
+      "title": "Kompletterande parodontal undersökning eller kariesutredning, utförd av tandhygienist"
+    },
+    {
+      "general_reference_price_ore": null,
+      "procedure_code": "115",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 106000,
+      "title": "Konsultation specialisttandvård"
+    },
+    {
+      "general_reference_price_ore": null,
+      "procedure_code": "116",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 208000,
+      "title": "Konsultation specialisttandvård, omfattande"
+    },
+    {
+      "general_reference_price_ore": 8000,
+      "procedure_code": "121",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 12000,
+      "title": "Röntgenundersökning, en bild, eller flera bilder av en tandposition"
+    },
+    {
+      "general_reference_price_ore": 102000,
+      "procedure_code": "123",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 159500,
+      "title": "Röntgenundersökning, helstatus"
+    },
+    {
+      "general_reference_price_ore": 63500,
+      "procedure_code": "124",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 113000,
+      "title": "Panoramaröntgenundersökning"
+    },
+    {
+      "general_reference_price_ore": 62000,
+      "procedure_code": "125",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 112500,
+      "title": "Röntgenundersökning, extraoral"
+    },
+    {
+      "general_reference_price_ore": 121500,
+      "procedure_code": "126",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 207500,
+      "title": "Röntgenundersökning, omfattande"
+    },
+    {
+      "general_reference_price_ore": 23500,
+      "procedure_code": "127",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 41000,
+      "title": "Röntgenundersökning, delstatus"
+    },
+    {
+      "general_reference_price_ore": 40500,
+      "procedure_code": "128",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 62500,
+      "title": "Röntgenundersökning, större delstatus"
+    },
+    {
+      "general_reference_price_ore": 121000,
+      "procedure_code": "131",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 155500,
+      "title": "Tomografiundersökning, en kvadrant eller tandposition 3-3"
+    },
+    {
+      "general_reference_price_ore": 153500,
+      "procedure_code": "132",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 208000,
+      "title": "Tomografiundersökning, två kvadranter eller sinus"
+    },
+    {
+      "general_reference_price_ore": 192000,
+      "procedure_code": "133",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 283000,
+      "title": "Tomografiundersökning, tre kvadranter eller käkleder"
+    },
+    {
+      "general_reference_price_ore": 225500,
+      "procedure_code": "134",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 334000,
+      "title": "Tomografiundersökning, fyra kvadranter"
+    },
+    {
+      "general_reference_price_ore": 88500,
+      "procedure_code": "141",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 88500,
+      "title": "Analoga studiemodeller för behandlingsplanering"
+    },
+    {
+      "general_reference_price_ore": 53500,
+      "procedure_code": "142",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 53500,
+      "title": "Digitala studiemodeller för behandlingsplanering"
+    },
+    {
+      "general_reference_price_ore": 90000,
+      "procedure_code": "161",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 90000,
+      "title": "Salivsekretionsmätning"
+    },
+    {
+      "general_reference_price_ore": 52000,
+      "procedure_code": "162",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 52000,
+      "title": "Laboratoriekostnader vid mikrobiologisk undersökning"
+    },
+    {
+      "general_reference_price_ore": 126000,
+      "procedure_code": "163",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 156500,
+      "title": "Biopsi"
+    },
+    {
+      "general_reference_price_ore": 89500,
+      "procedure_code": "164",
+      "series": "100",
+      "series_title": "Undersökningar, riskbedömning och hälsofrämjande åtgärder",
+      "specialist_reference_price_ore": 89500,
+      "title": "Laboratoriekostnader vid patologanatomisk diagnostik (PAD)"
+    },
+    {
+      "general_reference_price_ore": 60000,
+      "procedure_code": "201",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 60000,
+      "title": "Rådgivande samtal eller instruktion vid risk för munhälsorelaterade sjukdomar eller problem"
+    },
+    {
+      "general_reference_price_ore": 113500,
+      "procedure_code": "204",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 113500,
+      "title": "Profylaxskena, per skena"
+    },
+    {
+      "general_reference_price_ore": 24500,
+      "procedure_code": "205",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 24500,
+      "title": "Fluorbehandling, kortare behandlingstid"
+    },
+    {
+      "general_reference_price_ore": 48500,
+      "procedure_code": "206",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 48500,
+      "title": "Fluorbehandling"
+    },
+    {
+      "general_reference_price_ore": 37500,
+      "procedure_code": "207",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 37500,
+      "title": "Mekaniskt avlägsnande av supragingival tandsten"
+    },
+    {
+      "general_reference_price_ore": 73500,
+      "procedure_code": "208",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 73500,
+      "title": "Mekaniskt avlägsnande av supragingival tandsten, omfattande"
+    },
+    {
+      "general_reference_price_ore": 114500,
+      "procedure_code": "209",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 114500,
+      "title": "Mekaniskt avlägsnande av supragingival tandsten, särskilt tidskrävande"
+    },
+    {
+      "general_reference_price_ore": 150500,
+      "procedure_code": "213",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 150500,
+      "title": "Kvalificerat rådgivande samtal för beteendemedicinsk prevention, 60 minuter eller mer"
+    },
+    {
+      "general_reference_price_ore": 69500,
+      "procedure_code": "214",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 69500,
+      "title": "Kvalificerat rådgivande samtal för beteendemedicinsk prevention"
+    },
+    {
+      "general_reference_price_ore": 39500,
+      "procedure_code": "250",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 39500,
+      "title": "Rådgivande samtal eller instruktion vid risk för munhälsorelaterade sjukdomar eller problem, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 103000,
+      "procedure_code": "251",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 103000,
+      "title": "Kvalificerat rådgivande samtal för sjukdoms- eller smärtprevention, 60 minuter eller mer, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 48000,
+      "procedure_code": "252",
+      "series": "200",
+      "series_title": "Sjukdomsförebyggande åtgärder",
+      "specialist_reference_price_ore": 48000,
+      "title": "Kvalificerat rådgivande samtal för sjukdoms- eller smärtprevention, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 45000,
+      "procedure_code": "301",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 59000,
+      "title": "Sjukdoms- eller smärtbehandling, mindre omfattande"
+    },
+    {
+      "general_reference_price_ore": 84000,
+      "procedure_code": "302",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 112000,
+      "title": "Sjukdoms- eller smärtbehandling"
+    },
+    {
+      "general_reference_price_ore": 124500,
+      "procedure_code": "303",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 166500,
+      "title": "Sjukdoms- elller smärtbehandling, omfattande"
+    },
+    {
+      "general_reference_price_ore": 202500,
+      "procedure_code": "304",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 265000,
+      "title": "Sjukdoms- eller smärtbehandling, särskilt tidskrävande"
+    },
+    {
+      "general_reference_price_ore": 59500,
+      "procedure_code": "311",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 59500,
+      "title": "Information eller instruktion vid munhälsorelaterade sjukdomar eller problem"
+    },
+    {
+      "general_reference_price_ore": 24000,
+      "procedure_code": "312",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 24000,
+      "title": "Uppföljande information eller instruktion vid munhälsorelaterade sjukdomar eller problem"
+    },
+    {
+      "general_reference_price_ore": 150500,
+      "procedure_code": "313",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 274500,
+      "title": "Beteendemedicinsk behandling, 60 minuter eller mer"
+    },
+    {
+      "general_reference_price_ore": 69500,
+      "procedure_code": "314",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 127000,
+      "title": "Beteendemedicinsk behandling"
+    },
+    {
+      "general_reference_price_ore": 60000,
+      "procedure_code": "321",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 60000,
+      "title": "Icke-operativ behandling av kariessjukdom"
+    },
+    {
+      "general_reference_price_ore": 135000,
+      "procedure_code": "322",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 135000,
+      "title": "Stegvis exkavering"
+    },
+    {
+      "general_reference_price_ore": 52500,
+      "procedure_code": "340",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 57500,
+      "title": "Behandling av parodontal sjukdom eller periimplantit"
+    },
+    {
+      "general_reference_price_ore": 92000,
+      "procedure_code": "341",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 160500,
+      "title": "Behandling av parodontal sjukdom eller periimplantit, omfattande"
+    },
+    {
+      "general_reference_price_ore": 143000,
+      "procedure_code": "342",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 264500,
+      "title": "Behandling av parodontal sjukdom eller periimplantit, tidskrävande"
+    },
+    {
+      "general_reference_price_ore": 216500,
+      "procedure_code": "343",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 472000,
+      "title": "Behandling av parodontal sjukdom eller periimplantit, särskilt tidskrävande"
+    },
+    {
+      "general_reference_price_ore": 39500,
+      "procedure_code": "350",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 39500,
+      "title": "Rådgivande samtal eller instruktion vid munhälsorelaterade sjukdomar eller problem, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 103000,
+      "procedure_code": "351",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 103000,
+      "title": "Kvalificerat rådgivande samtal vid sjukdoms- eller smärttillstånd, 60 minuter eller mer, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 48000,
+      "procedure_code": "352",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 48000,
+      "title": "Kvalificerat rådgivande samtal vid sjukdoms- eller smärttillstånd, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 102500,
+      "procedure_code": "362",
+      "series": "300",
+      "series_title": "Sjukdomsbehandlande åtgärder",
+      "specialist_reference_price_ore": 102500,
+      "title": "Lustgassedering, per gång"
+    },
+    {
+      "general_reference_price_ore": 128000,
+      "procedure_code": "401",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 167000,
+      "title": "Tanduttagning, en tand"
+    },
+    {
+      "general_reference_price_ore": 182000,
+      "procedure_code": "402",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 238000,
+      "title": "Tanduttagning, när separation eller friläggning krävs, en tand"
+    },
+    {
+      "general_reference_price_ore": 51000,
+      "procedure_code": "403",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 66000,
+      "title": "Tanduttagning, enkel"
+    },
+    {
+      "general_reference_price_ore": 375500,
+      "procedure_code": "404",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 480000,
+      "title": "Kirurgiskt avlägsnande av en eller flera tänder i samma kvadrant och/eller annan vävnad"
+    },
+    {
+      "general_reference_price_ore": 433000,
+      "procedure_code": "405",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 552000,
+      "title": "Dentoalveolär kirurgi vid komplicerade förhållanden"
+    },
+    {
+      "general_reference_price_ore": 128000,
+      "procedure_code": "406",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 167000,
+      "title": "Tanduttagning, övertalig tand"
+    },
+    {
+      "general_reference_price_ore": 247000,
+      "procedure_code": "407",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 309500,
+      "title": "Övrig kirurgi eller plastik"
+    },
+    {
+      "general_reference_price_ore": 501000,
+      "procedure_code": "408",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 647500,
+      "title": "Preprotetisk friläggning med lambå, omfattande"
+    },
+    {
+      "general_reference_price_ore": 155000,
+      "procedure_code": "409",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 210000,
+      "title": "Lambåoperation, ytterligare när flera lambåoperationer utförs under samma dag, per kvadrant,tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 94500,
+      "procedure_code": "410",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 129000,
+      "title": "Tanduttagning, ytterligare när flera tanduttagningar utförs under samma dag eller i samband med lambåoperation, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 358500,
+      "procedure_code": "420",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 358500,
+      "title": "Implantat, per styck"
+    },
+    {
+      "general_reference_price_ore": 375500,
+      "procedure_code": "421",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 471500,
+      "title": "Operation avseende käkbensförankrade implantat, ett implantat"
+    },
+    {
+      "general_reference_price_ore": 180500,
+      "procedure_code": "422",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 222500,
+      "title": "Kirurgisk friläggning av ett implantat vid tvåstegsteknik"
+    },
+    {
+      "general_reference_price_ore": 545500,
+      "procedure_code": "423",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 686500,
+      "title": "Operation avseende käkbensförankrade implantat, två eller tre implantat"
+    },
+    {
+      "general_reference_price_ore": 202500,
+      "procedure_code": "424",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 251500,
+      "title": "Kirurgisk friläggning av två eller tre implantat vid tvåstegsteknik"
+    },
+    {
+      "general_reference_price_ore": 752000,
+      "procedure_code": "425",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 927500,
+      "title": "Operation avseende käkbensförankrade implantat, fyra eller fler implantat"
+    },
+    {
+      "general_reference_price_ore": 270500,
+      "procedure_code": "426",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 340500,
+      "title": "Kirurgisk friläggning av fyra eller fler implantat vid tvåstegsteknik"
+    },
+    {
+      "general_reference_price_ore": 472000,
+      "procedure_code": "427",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 598500,
+      "title": "Benaugmentation med egen vävnad i en kvadrant"
+    },
+    {
+      "general_reference_price_ore": 568000,
+      "procedure_code": "428",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 681000,
+      "title": "Benaugmentation med benersättningsmaterial i en kvadrant"
+    },
+    {
+      "general_reference_price_ore": 465500,
+      "procedure_code": "429",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 591500,
+      "title": "Kirurgiskt avlägsnande av implantat"
+    },
+    {
+      "general_reference_price_ore": 153500,
+      "procedure_code": "430",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 208500,
+      "title": "Benaugmentation med egen vävnad i en kvadrant i samband med benaugmentation i annan kvadrant eller i implantatoperation i samma kvadrant, per kvadrant, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 273000,
+      "procedure_code": "431",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 328000,
+      "title": "Benaugmentation med benersättningsmaterial i samband med benaugmentation eller implantatoperation i annan kvadrant, per kvadrant, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 203000,
+      "procedure_code": "432",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 244500,
+      "title": "Benaugmentation med benersättningsmaterial i samband med implantatinstallation, per kvadrant, tillägsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 103500,
+      "procedure_code": "433",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 145000,
+      "title": "Sinuslyft utan autologt ben eller benersättningsmaterial i samband med implantatinstallation, per kvadrant, tillägsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 80500,
+      "procedure_code": "436",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 107000,
+      "title": "Avlägsnande av ett implantat"
+    },
+    {
+      "general_reference_price_ore": 203500,
+      "procedure_code": "446",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 224500,
+      "title": "Rekonstruktiv behandling med membran (GTR) eller emaljmatrixprotein, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 137500,
+      "procedure_code": "447",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 151500,
+      "title": "Rekonstruktiv behandling med benersättningsmaterial, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 75500,
+      "procedure_code": "448",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 103000,
+      "title": "Fritt bindvävstransplantat vid lambåoperation, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 391000,
+      "procedure_code": "451",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 530000,
+      "title": "Parodontalkirurgi i en kvadrant eller inom tandposition 3–3"
+    },
+    {
+      "general_reference_price_ore": 541000,
+      "procedure_code": "452",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 728500,
+      "title": "Parodontalkirurgi i flera kvadranter eller omfattande parodontalkirurgi i en kvadrant eller inom tandposition 3-3"
+    },
+    {
+      "general_reference_price_ore": 411500,
+      "procedure_code": "453",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 558500,
+      "title": "Kirurgisk behandling av periimplantit och i förekommande fall tänder med parodontit i en kvadrant eller inom tandposition 3-3"
+    },
+    {
+      "general_reference_price_ore": 582000,
+      "procedure_code": "454",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 784500,
+      "title": "Kirurgisk behandling av periimplantit och i förekommande fall tänder med parodontit i flera kvadranter eller omfattande kirurgisk behandling i en kvadrant eller inom tandposition 3–3"
+    },
+    {
+      "general_reference_price_ore": 40000,
+      "procedure_code": "480",
+      "series": "400",
+      "series_title": "Kirurgiska åtgärder",
+      "specialist_reference_price_ore": 40000,
+      "title": "Kontroll av koagulation, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 410500,
+      "procedure_code": "501",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 513500,
+      "title": "Rensning och rotfyllning, en rotkanal"
+    },
+    {
+      "general_reference_price_ore": 495500,
+      "procedure_code": "502",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 622500,
+      "title": "Rensning och rotfyllning, två rotkanaler"
+    },
+    {
+      "general_reference_price_ore": 622500,
+      "procedure_code": "503",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 784000,
+      "title": "Rensning och rotfyllning, tre rotkanaler"
+    },
+    {
+      "general_reference_price_ore": 679000,
+      "procedure_code": "504",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 854500,
+      "title": "Rensning och rotfyllning, fyra eller fler rotkanaler"
+    },
+    {
+      "general_reference_price_ore": 100500,
+      "procedure_code": "520",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 131000,
+      "title": "Akut endodontisk behandling, annan behandlare"
+    },
+    {
+      "general_reference_price_ore": 88500,
+      "procedure_code": "521",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 116500,
+      "title": "Akut trepanation och kavumextirpation"
+    },
+    {
+      "general_reference_price_ore": 89000,
+      "procedure_code": "522",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 117000,
+      "title": "Komplicerad rotkanallokalisation"
+    },
+    {
+      "general_reference_price_ore": 130000,
+      "procedure_code": "523",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 172000,
+      "title": "Stiftborttagning"
+    },
+    {
+      "general_reference_price_ore": 441000,
+      "procedure_code": "541",
+      "series": "500",
+      "series_title": "Rotbehandlingsåtgärder",
+      "specialist_reference_price_ore": 566500,
+      "title": "Apikalkirurgisk behandling"
+    },
+    {
+      "general_reference_price_ore": 437000,
+      "procedure_code": "601",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 597500,
+      "title": "Bettskena i hård akrylat i överkäken, utförd på bettfysiologisk indikation, per skena"
+    },
+    {
+      "general_reference_price_ore": 437000,
+      "procedure_code": "602",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 597500,
+      "title": "Bettskena i hård akrylat i underkäken, utförd på bettfysiologisk indikation, per skena"
+    },
+    {
+      "general_reference_price_ore": 669500,
+      "procedure_code": "603",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 815000,
+      "title": "Reponeringsskena, per skena"
+    },
+    {
+      "general_reference_price_ore": 278000,
+      "procedure_code": "604",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 334000,
+      "title": "Mjukplastskena, laboratorieframställd, utförd på bettfysiologiska indikationer, per skena"
+    },
+    {
+      "general_reference_price_ore": 73000,
+      "procedure_code": "606",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 75000,
+      "title": "Motorisk aktivering"
+    },
+    {
+      "general_reference_price_ore": 82500,
+      "procedure_code": "607",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 110000,
+      "title": "Bettslipning för ocklusal stabilisering"
+    },
+    {
+      "general_reference_price_ore": 48000,
+      "procedure_code": "650",
+      "series": "600",
+      "series_title": "Bettfysiologiska åtgärder",
+      "specialist_reference_price_ore": 48000,
+      "title": "Motorisk aktivering, distanskontakt via videolänk"
+    },
+    {
+      "general_reference_price_ore": 73000,
+      "procedure_code": "701",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 73000,
+      "title": "Fyllning av en yta på framtand eller hörntand"
+    },
+    {
+      "general_reference_price_ore": 116000,
+      "procedure_code": "702",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 116000,
+      "title": "Fyllning av två ytor på framtand eller hörntand"
+    },
+    {
+      "general_reference_price_ore": 142000,
+      "procedure_code": "703",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 142000,
+      "title": "Fyllning av tre eller flera ytor på framtand eller hörntand"
+    },
+    {
+      "general_reference_price_ore": 94000,
+      "procedure_code": "704",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 94000,
+      "title": "Fyllning av en yta på molar eller premolar"
+    },
+    {
+      "general_reference_price_ore": 137000,
+      "procedure_code": "705",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 137000,
+      "title": "Fyllning av två ytor på molar eller premolar"
+    },
+    {
+      "general_reference_price_ore": 183000,
+      "procedure_code": "706",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 183000,
+      "title": "Fyllning av tre eller flera ytor på molar eller premolar"
+    },
+    {
+      "general_reference_price_ore": 207500,
+      "procedure_code": "707",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 207500,
+      "title": "Krona i plastiskt material, klinikframställd"
+    },
+    {
+      "general_reference_price_ore": 55000,
+      "procedure_code": "708",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": 55000,
+      "title": "Stiftförankring i rotkanal vid fyllningsterapi, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 50500,
+      "procedure_code": "711",
+      "series": "700",
+      "series_title": "Reparativa åtgärder",
+      "specialist_reference_price_ore": null,
+      "title": "Fyllning, utförd av tandhygienist"
+    },
+    {
+      "general_reference_price_ore": 682500,
+      "procedure_code": "800",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 825000,
+      "title": "Permanent tandstödd krona, en per käke"
+    },
+    {
+      "general_reference_price_ore": 527500,
+      "procedure_code": "801",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 639500,
+      "title": "Permanent tandstödd krona, flera i samma käke"
+    },
+    {
+      "general_reference_price_ore": 388000,
+      "procedure_code": "802",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 472000,
+      "title": "Laboratorieframställd pelare med intraradikulärt stift"
+    },
+    {
+      "general_reference_price_ore": 181000,
+      "procedure_code": "803",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 229500,
+      "title": "Klinikframställd pelare med intraradikulärt stift"
+    },
+    {
+      "general_reference_price_ore": 281500,
+      "procedure_code": "804",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 310000,
+      "title": "Hängande led vid tandstödd protetik, per led"
+    },
+    {
+      "general_reference_price_ore": 216500,
+      "procedure_code": "805",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 258000,
+      "title": "Laboratorieframställt emaljretinerat brostöd, per stöd"
+    },
+    {
+      "general_reference_price_ore": 410500,
+      "procedure_code": "806",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 494500,
+      "title": "Radikulärförankring vid avtagbar protes"
+    },
+    {
+      "general_reference_price_ore": 316000,
+      "procedure_code": "807",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 365000,
+      "title": "Semipermanent tandstödd krona, brostöd eller hängande led, per led"
+    },
+    {
+      "general_reference_price_ore": 402000,
+      "procedure_code": "808",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 485500,
+      "title": "Innerkrona för teleskop- och konuskonstruktioner"
+    },
+    {
+      "general_reference_price_ore": 135000,
+      "procedure_code": "809",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 156000,
+      "title": "Långtidstemporär tandstödd laboratorieframställd krona, brostöd eller\r\nhängande led, per led"
+    },
+    {
+      "general_reference_price_ore": 63500,
+      "procedure_code": "811",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 84500,
+      "title": "Cementering av lossnad tandstödd eller implantatstödd protetisk konstruktion, per stöd"
+    },
+    {
+      "general_reference_price_ore": 162500,
+      "procedure_code": "812",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 218500,
+      "title": "Reparation av krona eller bro, utan tandteknisk insats"
+    },
+    {
+      "general_reference_price_ore": 547000,
+      "procedure_code": "813",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 686500,
+      "title": "Broreparation med tandteknisk insats"
+    },
+    {
+      "general_reference_price_ore": 957500,
+      "procedure_code": "814",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1180500,
+      "title": "Broreparation med tandteknisk insats, omfattande"
+    },
+    {
+      "general_reference_price_ore": 613500,
+      "procedure_code": "815",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 739000,
+      "title": "Sadelkrona"
+    },
+    {
+      "general_reference_price_ore": 155000,
+      "procedure_code": "820",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 176000,
+      "title": "Skena med tandersättning för temporärt bruk"
+    },
+    {
+      "general_reference_price_ore": 500000,
+      "procedure_code": "822",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 583500,
+      "title": "Partiell protes för temporärt bruk, en till tre tänder"
+    },
+    {
+      "general_reference_price_ore": 678500,
+      "procedure_code": "823",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 790000,
+      "title": "Partiell protes för temporärt bruk, fyra eller fler tänder"
+    },
+    {
+      "general_reference_price_ore": 1362000,
+      "procedure_code": "824",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1557500,
+      "title": "Partiell protes med gjutet skelett, klammerförankrad"
+    },
+    {
+      "general_reference_price_ore": 1525000,
+      "procedure_code": "825",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1851000,
+      "title": "Komplicerad partiell protes med metallskelett som förankras med stöd av urtagskrona, innerkrona eller attachments"
+    },
+    {
+      "general_reference_price_ore": 18500,
+      "procedure_code": "826",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 18500,
+      "title": "Attachments, per styck"
+    },
+    {
+      "general_reference_price_ore": 1251000,
+      "procedure_code": "827",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1545500,
+      "title": "Hel underkäksprotes"
+    },
+    {
+      "general_reference_price_ore": 1251000,
+      "procedure_code": "828",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1545500,
+      "title": "Hel överkäksprotes"
+    },
+    {
+      "general_reference_price_ore": 927000,
+      "procedure_code": "829",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1079000,
+      "title": "Immediatprotes, hel käke"
+    },
+    {
+      "general_reference_price_ore": 41500,
+      "procedure_code": "831",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 55500,
+      "title": "Justering av avtagbar protes"
+    },
+    {
+      "general_reference_price_ore": 199000,
+      "procedure_code": "832",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 227000,
+      "title": "Lagning av protes eller tillsättning av protestand"
+    },
+    {
+      "general_reference_price_ore": 345500,
+      "procedure_code": "833",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 408500,
+      "title": "Rebasering av protes där avtryck krävs"
+    },
+    {
+      "general_reference_price_ore": 263000,
+      "procedure_code": "834",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 305000,
+      "title": "Lagning av protes där avtryck krävs"
+    },
+    {
+      "general_reference_price_ore": 397500,
+      "procedure_code": "835",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 467000,
+      "title": "Rebasering och lagning av protes"
+    },
+    {
+      "general_reference_price_ore": 415000,
+      "procedure_code": "836",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 484500,
+      "title": "Komplicerad lagning av protes"
+    },
+    {
+      "general_reference_price_ore": 919500,
+      "procedure_code": "837",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1039500,
+      "title": "Komplicerad lagning av protes där uppvaxning och gjutning av ny del utförs vilken svetsas till befintlig protes"
+    },
+    {
+      "general_reference_price_ore": 359500,
+      "procedure_code": "839",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 429000,
+      "title": "Inmontering av förankringselement, per käke"
+    },
+    {
+      "general_reference_price_ore": 225500,
+      "procedure_code": "845",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 278000,
+      "title": "Ocklusionskorrigerande bettslipning"
+    },
+    {
+      "general_reference_price_ore": 468500,
+      "procedure_code": "846",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 566000,
+      "title": "Skena, hel eller cementerad i sektioner, för vertikal platsberedning eller bettstabilisering"
+    },
+    {
+      "general_reference_price_ore": 565000,
+      "procedure_code": "847",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 662500,
+      "title": "Klammerplåt"
+    },
+    {
+      "general_reference_price_ore": 60000,
+      "procedure_code": "848",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 81000,
+      "title": "Betthöjning eller uppbyggnad för ocklusal stabilisering med fyllningsmaterial, per tandposition"
+    },
+    {
+      "general_reference_price_ore": 1035500,
+      "procedure_code": "850",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1203500,
+      "title": "Implantatstödd krona, en per käke"
+    },
+    {
+      "general_reference_price_ore": 823000,
+      "procedure_code": "852",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 948000,
+      "title": "Implantatstödd krona, flera i samma käke"
+    },
+    {
+      "general_reference_price_ore": 284500,
+      "procedure_code": "853",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 312500,
+      "title": "Hängande led vid implantatstödd bro"
+    },
+    {
+      "general_reference_price_ore": 355000,
+      "procedure_code": "854",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 397000,
+      "title": "Semipermanent implantatstödd krona, brostöd eller hängande led, per led"
+    },
+    {
+      "general_reference_price_ore": 62000,
+      "procedure_code": "855",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 62000,
+      "title": "Fästskruv/broskruv och cylinder vid semipermanent krona på implantat, per implantat"
+    },
+    {
+      "general_reference_price_ore": 203500,
+      "procedure_code": "856",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 231000,
+      "title": "Långtidstemporär laboratorieframställd implantatstödd krona,\r\nbrostöd eller hängande led, per led"
+    },
+    {
+      "general_reference_price_ore": 62000,
+      "procedure_code": "857",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 62000,
+      "title": "Fästskruv/broskruv och cylinder vid långtidstemporär laboratorieframställd krona på implantat, per implantat"
+    },
+    {
+      "general_reference_price_ore": 158000,
+      "procedure_code": "858",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 158000,
+      "title": "Distans inkl distansskruv, per styck"
+    },
+    {
+      "general_reference_price_ore": 100500,
+      "procedure_code": "859",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 100500,
+      "title": "Integrerad distans/kopplingskomponent vid separat implantatstödd krona, per styck, tilläggsåtgärd"
+    },
+    {
+      "general_reference_price_ore": 3653000,
+      "procedure_code": "861",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 4073500,
+      "title": "Implantatstödd bro i överkäke på fyra implantat"
+    },
+    {
+      "general_reference_price_ore": 3784500,
+      "procedure_code": "862",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 4205000,
+      "title": "Implantatstödd bro i överkäke på fem implantat"
+    },
+    {
+      "general_reference_price_ore": 3916000,
+      "procedure_code": "863",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 4337000,
+      "title": "Implantatstödd bro i överkäke på sex eller fler implantat"
+    },
+    {
+      "general_reference_price_ore": 3522500,
+      "procedure_code": "865",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 3901000,
+      "title": "Implantatstödd bro i underkäke på fyra implantat eller fler implantat"
+    },
+    {
+      "general_reference_price_ore": 2112000,
+      "procedure_code": "871",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 2412000,
+      "title": "Implantatstödd täckprotes i överkäke på två implantat, eller implantatstödd täckprotes i underkäke p"
+    },
+    {
+      "general_reference_price_ore": 2317500,
+      "procedure_code": "872",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 2617500,
+      "title": "Implantatstödd täckprotes i överkäke på tre implantat"
+    },
+    {
+      "general_reference_price_ore": 2523500,
+      "procedure_code": "873",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 2823000,
+      "title": "Implantatstödd täckprotes i överkäke på fyra implantat eller fler"
+    },
+    {
+      "general_reference_price_ore": 533000,
+      "procedure_code": "874",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 575000,
+      "title": "Tillägg för alveolarbar på två implantat"
+    },
+    {
+      "general_reference_price_ore": 697500,
+      "procedure_code": "875",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 739500,
+      "title": "Tillägg för alveolarbar på tre implantat"
+    },
+    {
+      "general_reference_price_ore": 850000,
+      "procedure_code": "876",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 892000,
+      "title": "Tillägg för alveolarbar på fyra implantat"
+    },
+    {
+      "general_reference_price_ore": 1710500,
+      "procedure_code": "877",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 2010500,
+      "title": "Implantatstödd täckprotes, exklusive implantat, implantat-komponeter och förankringselement"
+    },
+    {
+      "general_reference_price_ore": 33000,
+      "procedure_code": "878",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 33000,
+      "title": "Förankringselement täckprotes, tillägg, per styck"
+    },
+    {
+      "general_reference_price_ore": 122000,
+      "procedure_code": "881",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 164000,
+      "title": "Reparation av fast implantatstödd konstruktion, mindre omfattande"
+    },
+    {
+      "general_reference_price_ore": 251500,
+      "procedure_code": "883",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 286500,
+      "title": "Reparation/ombyggnad av fast implantatstödd konstruktion med tandteknisk insats"
+    },
+    {
+      "general_reference_price_ore": 981500,
+      "procedure_code": "884",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 1072000,
+      "title": "Reparation/ombyggnad av implantatstödd bro där omfattande tandteknisk insats krävs"
+    },
+    {
+      "general_reference_price_ore": 20500,
+      "procedure_code": "888",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 20500,
+      "title": "Fästskruv/broskruv, per styck"
+    },
+    {
+      "general_reference_price_ore": 43500,
+      "procedure_code": "889",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 43500,
+      "title": "Distansskruv, per styck"
+    },
+    {
+      "general_reference_price_ore": 38500,
+      "procedure_code": "892",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 38500,
+      "title": "Läkdistans, per styck"
+    },
+    {
+      "general_reference_price_ore": 118000,
+      "procedure_code": "893",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 159500,
+      "title": "Avmontering av implantatstödda konstruktioner på sammanlagt ett till tre implantat"
+    },
+    {
+      "general_reference_price_ore": 123500,
+      "procedure_code": "894",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 165500,
+      "title": "Återmontering av implantatstödda konstruktioner på sammanlagt ett till tre implantat"
+    },
+    {
+      "general_reference_price_ore": 155500,
+      "procedure_code": "895",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 211000,
+      "title": "Avmontering av implantatstödda konstruktioner på sammanlagt fyra eller fler implantat"
+    },
+    {
+      "general_reference_price_ore": 168000,
+      "procedure_code": "896",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 223500,
+      "title": "Återmontering av implantatstödda konstruktioner på sammanlagt fyra eller fler implantat"
+    },
+    {
+      "general_reference_price_ore": 283500,
+      "procedure_code": "897",
+      "series": "800",
+      "series_title": "Protetiska åtgärder",
+      "specialist_reference_price_ore": 413500,
+      "title": "Åtgärdande av tekniska implantatkomplikationer"
+    },
+    {
+      "general_reference_price_ore": 1119500,
+      "procedure_code": "900",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 1458000,
+      "title": "Tandreglering, en käke, aktiv behandling högst 6 månader"
+    },
+    {
+      "general_reference_price_ore": 1680000,
+      "procedure_code": "901",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 2188500,
+      "title": "Tandreglering, en käke, aktiv behandling högst 1 år"
+    },
+    {
+      "general_reference_price_ore": 2094000,
+      "procedure_code": "902",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 2747000,
+      "title": "Tandreglering, en käke, aktiv behandling 1 år till 1,5 år"
+    },
+    {
+      "general_reference_price_ore": 2470000,
+      "procedure_code": "903",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 3253500,
+      "title": "Tandreglering, en käke, aktiv behandling 1,5 år till 2 år"
+    },
+    {
+      "general_reference_price_ore": 3064500,
+      "procedure_code": "904",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 4054000,
+      "title": "Tandreglering, en käke, aktiv behandling mer än 2 år"
+    },
+    {
+      "general_reference_price_ore": 2362000,
+      "procedure_code": "905",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 3042500,
+      "title": "Tandreglering, två käkar, aktiv behandling högst 1 år"
+    },
+    {
+      "general_reference_price_ore": 2776000,
+      "procedure_code": "906",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 3601000,
+      "title": "Tandreglering, två käkar, aktiv behandling 1 år till 1,5 år"
+    },
+    {
+      "general_reference_price_ore": 3190000,
+      "procedure_code": "907",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 4159000,
+      "title": "Tandreglering, två käkar, aktiv behandling 1,5 år till 2 år"
+    },
+    {
+      "general_reference_price_ore": 3847500,
+      "procedure_code": "908",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 5043500,
+      "title": "Tandreglering, två käkar, aktiv behandling i mer än 2 år"
+    },
+    {
+      "general_reference_price_ore": 142000,
+      "procedure_code": "921",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 142000,
+      "title": "Utbytesåtgärd. Krona istället för ersättningsberättigande fyllning, fram- eller hörntand"
+    },
+    {
+      "general_reference_price_ore": 183000,
+      "procedure_code": "922",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 183000,
+      "title": "Utbytesåtgärd. Krona istället för ersättningsberättigande fyllning, molar eller premolar"
+    },
+    {
+      "general_reference_price_ore": 142000,
+      "procedure_code": "923",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 142000,
+      "title": "Utbytesåtgärd. Fasad i stället för ersättningsberättigande fyllning, tandposition 1–3"
+    },
+    {
+      "general_reference_price_ore": 183000,
+      "procedure_code": "924",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 183000,
+      "title": "Utbytesåtgärd. Fasad i stället för ersättningsberättigande fyllning, tandposition 4–5"
+    },
+    {
+      "general_reference_price_ore": 809000,
+      "procedure_code": "926",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 949500,
+      "title": "Utbytesåtgärd. Implantatbehandling i entandslucka istället för ersättningsberättigande tandstödd bro, protetisk del/implantatstödd krona"
+    },
+    {
+      "general_reference_price_ore": 527500,
+      "procedure_code": "929",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 639500,
+      "title": "Utbytesåtgärd. Implantatbehandling i entandslucka istället för ersättningsberättigande tandstödd bro när åtgärd 800 eller 801 har utförts inom två år på en av stödtänderna som utbytet beräknas på, protetisk del/implantatstödd krona"
+    },
+    {
+      "general_reference_price_ore": 1336500,
+      "procedure_code": "940",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 1589000,
+      "title": "Utbytesåtgärd. Ortodontisk slutning av entandslucka i stället för ersättningsberättigande tandstödd bro"
+    },
+    {
+      "general_reference_price_ore": 809000,
+      "procedure_code": "941",
+      "series": "900",
+      "series_title": "Tandreglerande åtgärder och utbytesåtgärder",
+      "specialist_reference_price_ore": 949500,
+      "title": "Utbytesåtgärd. Ortodontisk slutning av entandslucka istället för ersättningsberättigande tandstödd bro när åtgärd 800 eller 801 har utförts inom två år på en av stödtänderna som utbytet beräknas på"
+    }
+  ],
+  "regulation": "HSLF-FS 2025:68",
+  "regulation_title": "Tandvårds- och läkemedelsförmånsverkets föreskrifter och allmänna råd om statligt tandvårdsstöd",
+  "retrieved_at": "2026-08-14T01:32:20.559Z",
+  "schema_version": "1.0.0",
+  "source": "TLV",
+  "source_sha256": "4bcf4eda75f55c189fcefeb436bfd5074611f9c60a89416c7535e06ca91f2861",
+  "source_url": "https://www.tlv.se/download/18.529dc9ea19afcca05a41160c/1765803851920/Referenspriser%20med%20dentalt%20material%20fr%C3%A5n%201%20jan%202026.xlsx",
+  "superseded_by": {
+    "effectiveFrom": "2027-01-15",
+    "id": "HSLF-FS 2026:22"
+  },
+  "unverified_absent": [
+    "tillstand",
+    "tillstand_atgard_relationships",
+    "rule_paragraphs",
+    "handbook_logic",
+    "answered_questions"
+  ],
+  "verified_fields": [
+    "code",
+    "title",
+    "series",
+    "general_reference_price_ore",
+    "specialist_reference_price_ore",
+    "source",
+    "regulation",
+    "effective_from"
+  ]
+}
