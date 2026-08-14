@@ -15,6 +15,8 @@
  * the real flow are intentionally not part of the demo.
  */
 
+import * as KUSP from './kusp.js';
+
 (function () {
   const STORE_KEY = 'lilliSeDemo.v1';
   const LOCALES = ['sv-SE', 'en-SE'];
@@ -154,6 +156,74 @@
     review: { ask: 'lilli.conv.ask.review', kind: 'review' },
   };
 
+  /**
+   * KUSP-uppslag per ärendekategori.
+   *
+   * Detta är INTE en diagnos och inte ett val av tillstånd. Det är en
+   * uppslagsnyckel: "om det här ärendet leder till behandling, är det de här
+   * åtgärderna i TLV:s regelverk som brukar vara aktuella att läsa om".
+   * Tandläkaren avgör allt annat.
+   *
+   * Koderna nedan är åtgärdskoder ur TLV:s referensprislista — inga
+   * relationer är uppfunna, eftersom TLV inte publicerar kopplingen
+   * tillstånd↔åtgärd maskinläsbart.
+   */
+  const KUSP_BY_CONCERN = {
+    pain:          { careCategory: 'acute_assessment',        actions: ['103', '301'] },
+    broken_tooth:  { careCategory: 'restorative_assessment',  actions: ['701', '702'] },
+    swelling:      { careCategory: 'acute_assessment',        actions: ['103', '401'] },
+    checkup:       { careCategory: 'examination',             actions: ['101', '111'] },
+    other:         { careCategory: 'examination',             actions: ['103'] },
+  };
+
+  let kuspReady = false;
+
+  async function initKusp() {
+    try {
+      await KUSP.loadKusp();
+      kuspReady = true;
+      render();
+    } catch (err) {
+      // Utan paketet fungerar demonstrationen precis som förut — regelverks-
+      // rutan visas bara inte. Ett saknat kunskapspaket får aldrig stoppa
+      // säkerhetsflödet.
+      kuspReady = false;
+    }
+  }
+
+  function kuspPanel() {
+    if (!kuspReady || !state.completed || !state.completed.concern) return '';
+    const mapping = KUSP_BY_CONCERN[state.completed.concern];
+    if (!mapping) return '';
+    const actions = mapping.actions.map((c) => KUSP.getAction(c)).filter(Boolean);
+    if (!actions.length) return '<p class="lilli-note">' + esc(t('kusp.unavailable')) + '</p>';
+    const version = KUSP.getKuspVersion();
+
+    return '<section class="kusp">' +
+      '<h2 class="kusp__heading">' + esc(t('kusp.heading')) + '</h2>' +
+      '<p class="kusp__notice" role="note">' + esc(t('kusp.notADiagnosis')) + '</p>' +
+      '<p class="kusp__label">' + esc(t('kusp.category')) + '</p>' +
+      '<p class="kusp__value">' + esc(t('intake.concern.' + state.completed.concern)) + '</p>' +
+      '<ul class="kusp__list">' + actions.map(function (a) {
+        return '<li class="kusp__item">' +
+          '<span class="kusp__code">' + esc(a.code) + '</span> ' +
+          '<span class="kusp__title">' + esc(a.title) + '</span>' +
+          '<span class="kusp__price">' + esc(t('kusp.referencePrice')) + ': ' +
+            esc(a.referencePrice ? a.referencePrice.formatted : '—') + '</span>' +
+          (a.specialistReferencePrice
+            ? '<span class="kusp__price kusp__price--spec">' + esc(t('kusp.specialistPrice')) +
+              ': ' + esc(a.specialistReferencePrice.formatted) + '</span>'
+            : '') +
+          '</li>';
+      }).join('') + '</ul>' +
+      '<p class="kusp__fine">' + esc(t('kusp.priceExplainer')) + '</p>' +
+      '<p class="kusp__fine">' + esc(t('kusp.notEntitlement')) + '</p>' +
+      '<p class="kusp__source">' + esc(t('kusp.source')) + ' · ' +
+        esc(t('kusp.regulation')) + ' ' + esc(version.regulation) +
+        ' (' + esc(version.effectiveFrom) + ')</p>' +
+      '</section>';
+  }
+
   // Synthetic published openings, shown as information only.
   const OPENINGS = [
     { date: '2026-08-14', time: '09:40' },
@@ -270,6 +340,7 @@
       }
       state.completed = {
         requestId: j.requestId,
+        concern: j.answers.concern || null,
         reference: j.reference,
         timeCritical: j.timeCritical,
         urgent: urgentDisposition(j.answers),
@@ -383,7 +454,7 @@
       '<div class="lilli-actions">' +
       '<button type="button" class="lilli-btn" data-act="status">' + esc(t('lilli.conv.status.heading')) + '</button>' +
       '<button type="button" class="lilli-btn lilli-btn--quiet" data-act="start">' + esc(t('lilli.startOver')) + '</button>' +
-      '</div></div>';
+      '</div></div>' + kuspPanel();
   }
 
   function statusView() {
@@ -593,6 +664,7 @@
     state.journey.sending = false;
   }
   render();
+  initKusp();
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js').catch(function () {

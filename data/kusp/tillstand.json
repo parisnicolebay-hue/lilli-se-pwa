@@ -1,0 +1,10 @@
+{
+  "availability": {
+    "machineReadable": false,
+    "reason": "published as HTML pages only at kusp.tlv.se",
+    "status": "not_ingested"
+  },
+  "items": [],
+  "regulation": "HSLF-FS 2025:68",
+  "schema_version": "1.0.0"
+}

@@ -290,7 +290,21 @@ const I18N = {
   "demo.simulateOffline": "Demo: simulera avbrott vid sändning",
   "demo.offlineNote": "Avbrottet simulerades. Din förfrågan skickades inte dubbelt — samma referens används vid nytt försök.",
   "demo.resumed": "Vi fortsätter där du var.",
-  "demo.about": "Det här är en fristående demonstration. Ingen information skickas någonstans — allt sker i din webbläsare, med enbart syntetiska uppgifter."
+  "kusp.heading": "Svensk tandvårdsinformation",
+ "kusp.category": "Aktuell behandlingskategori",
+ "kusp.referencePrice": "TLV:s referenspris",
+ "kusp.specialistPrice": "Referenspris specialisttandvård",
+ "kusp.context": "Möjligt sammanhang för tandvårdsstöd",
+ "kusp.source": "Källa: TLV, Kunskapsstödet (KUSP)",
+ "kusp.regulation": "Regelverk",
+ "kusp.openSource": "Öppna officiell källa",
+ "kusp.notADiagnosis": "Det här är inte en diagnos. Vilket tillstånd du har och vilken behandling som gäller avgörs av en legitimerad tandläkare.",
+ "kusp.priceExplainer": "Referenspriset är grunden för hur det statliga tandvårdsstödet räknas ut. Det är inte klinikens pris, och inte vad du kommer att betala.",
+ "kusp.notEntitlement": "Om och hur mycket stöd du får avgörs först när mottagningen har alla uppgifter.",
+ "kusp.unavailable": "Ingen regelverksinformation är kopplad till den här kategorin.",
+ "kusp.show": "Visa tandvårdsstödsinformation",
+ "kusp.hide": "Dölj",
+ "demo.about": "Det här är en fristående demonstration. Ingen information skickas någonstans — allt sker i din webbläsare, med enbart syntetiska uppgifter."
  },
  "en-SE": {
   "intake.concern.pain": "Pain",
@@ -581,6 +595,20 @@ const I18N = {
   "demo.simulateOffline": "Demo: simulate a network drop on send",
   "demo.offlineNote": "The interruption was simulated. Your request was not sent twice — the same reference is used on retry.",
   "demo.resumed": "Continuing where you left off.",
-  "demo.about": "This is a standalone demonstration. Nothing is transmitted anywhere — everything happens in your browser, with synthetic data only."
+  "kusp.heading": "Swedish dental-support information",
+ "kusp.category": "Relevant treatment category",
+ "kusp.referencePrice": "TLV reference price",
+ "kusp.specialistPrice": "Specialist reference price",
+ "kusp.context": "Potential dental-support context",
+ "kusp.source": "Source: TLV, Kunskapsstödet (KUSP)",
+ "kusp.regulation": "Ruleset",
+ "kusp.openSource": "Open official source",
+ "kusp.notADiagnosis": "This is not a diagnosis. Which condition you have, and which treatment applies, is decided by a licensed dentist.",
+ "kusp.priceExplainer": "A reference price is the basis for calculating state dental support. It is not the clinic's price, and not what you will pay.",
+ "kusp.notEntitlement": "Whether and how much support you receive is determined only once the clinic has all the information.",
+ "kusp.unavailable": "No regulatory information is linked to this category.",
+ "kusp.show": "Show dental-support information",
+ "kusp.hide": "Hide",
+ "demo.about": "This is a standalone demonstration. Nothing is transmitted anywhere — everything happens in your browser, with synthetic data only."
  }
 };

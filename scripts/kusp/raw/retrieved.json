@@ -1,0 +1,13 @@
+{
+  "retrievedAt": "2026-08-14T01:32:20.559Z",
+  "files": {
+    "reference-prices-2026-01-01": {
+      "bytes": 34863,
+      "sha256": "4bcf4eda75f55c189fcefeb436bfd5074611f9c60a89416c7535e06ca91f2861"
+    },
+    "hslf-fs-2025-68": {
+      "bytes": 667096,
+      "sha256": "d4595a2391ba4da01fec9f17811980c8b5387d68a0ff284b8475d3dcd5c76b0b"
+    }
+  }
+}

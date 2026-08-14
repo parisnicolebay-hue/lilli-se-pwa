@@ -1,0 +1,10 @@
+{
+  "availability": {
+    "machineReadable": false,
+    "reason": "tillstånd↔åtgärd links are published as HTML only; inferring them would fabricate clinical relationships",
+    "status": "not_ingested"
+  },
+  "items": [],
+  "regulation": "HSLF-FS 2025:68",
+  "schema_version": "1.0.0"
+}

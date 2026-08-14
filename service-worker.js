@@ -10,7 +10,7 @@
  * on the list passes through to the network untouched and uncached.
  */
 
-const CACHE = 'lilli-se-demo-v5';
+const CACHE = 'lilli-se-demo-v6';
 
 const SHELL = [
   './',
@@ -25,6 +25,15 @@ const SHELL = [
   './icons/lilli-avatar.png',
   './icons/vanilli-os-mark.svg',
   './icons/lilli-hero.jpg',
+  // KUSP: the locally built TLV knowledge pack. Enumerated one file at a time
+  // — never a wildcard, and never a TLV URL. The patient browser must be able
+  // to answer offline, and must never be able to reach kusp.tlv.se.
+  './kusp.js',
+  './data/kusp/manifest.json',
+  './data/kusp/atgarder.json',
+  './data/kusp/tillstand.json',
+  './data/kusp/relationships.json',
+  './data/kusp/rules.json',
 ];
 
 const SHELL_URLS = new Set(SHELL.map((p) => new URL(p, self.location).href));

@@ -1,0 +1,9 @@
+{
+  "availability": {
+    "machineReadable": false,
+    "reason": "TLV handbook published as PDF",
+    "status": "not_ingested"
+  },
+  "items": [],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,4 @@
+# Raw TLV artefacts are build inputs, not runtime assets. They are cached
+# locally so a rebuild is reproducible without the network; they are not part
+# of the patient bundle and must never be served from the PWA.
+scripts/kusp/raw/*.pdf

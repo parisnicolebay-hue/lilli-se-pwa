@@ -1,0 +1,9 @@
+{
+  "availability": {
+    "machineReadable": false,
+    "reason": "answered questions published as HTML only",
+    "status": "not_ingested"
+  },
+  "items": [],
+  "schema_version": "1.0.0"
+}

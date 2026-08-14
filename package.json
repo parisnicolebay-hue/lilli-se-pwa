@@ -1,0 +1,14 @@
+{
+  "name": "lilli-se-pwa",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Lilli Sweden — synthetic demonstration PWA with a TLV/KUSP knowledge pack. No runtime dependencies: the app is static and the build uses only Node's standard library.",
+  "type": "module",
+  "scripts": {
+    "kusp:fetch": "node scripts/kusp/build.mjs fetch",
+    "kusp:build": "node scripts/kusp/build.mjs build",
+    "kusp:update": "node scripts/kusp/build.mjs update",
+    "kusp:validate": "node scripts/kusp/build.mjs validate",
+    "test": "node --test tests/"
+  }
+}

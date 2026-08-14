@@ -1,0 +1,10 @@
+{
+  "availability": {
+    "machineReadable": false,
+    "reason": "binding regulation published as PDF (HSLF-FS 2025:68)",
+    "status": "not_ingested"
+  },
+  "items": [],
+  "regulation": "HSLF-FS 2025:68",
+  "schema_version": "1.0.0"
+}

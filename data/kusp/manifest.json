@@ -1,0 +1,77 @@
+{
+  "availability": {
+    "atgarder": {
+      "machineReadable": true,
+      "source": "reference_price_file",
+      "status": "ingested"
+    },
+    "handbook": {
+      "machineReadable": false,
+      "reason": "TLV handbook published as PDF",
+      "status": "not_ingested"
+    },
+    "questions": {
+      "machineReadable": false,
+      "reason": "answered questions published as HTML only",
+      "status": "not_ingested"
+    },
+    "reference_prices": {
+      "machineReadable": true,
+      "source": "reference_price_file",
+      "status": "ingested"
+    },
+    "relationships": {
+      "machineReadable": false,
+      "reason": "tillstånd↔åtgärd links are published as HTML only; inferring them would fabricate clinical relationships",
+      "status": "not_ingested"
+    },
+    "rules": {
+      "machineReadable": false,
+      "reason": "binding regulation published as PDF (HSLF-FS 2025:68)",
+      "status": "not_ingested"
+    },
+    "specialist_reference_prices": {
+      "machineReadable": true,
+      "source": "reference_price_file",
+      "status": "ingested"
+    },
+    "tillstand": {
+      "machineReadable": false,
+      "reason": "published as HTML pages only at kusp.tlv.se",
+      "status": "not_ingested"
+    }
+  },
+  "counts": {
+    "atgarder": 200,
+    "relationships": 0,
+    "rules": 0,
+    "tillstand": 0
+  },
+  "dataset": "KUSP",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "generated_at": "2026-08-14T01:32:20.700Z",
+  "jurisdiction": "SE",
+  "notices": {
+    "binding_vs_explanatory": "HSLF-FS 2025:68 is binding. Handbook and KUSP guidance are explanatory and are marked separately.",
+    "not_a_diagnosis": "KUSP material supports application of the state dental-support rules. It never establishes a patient's clinical condition; only a licensed dentist does that.",
+    "reference_price_is_not_patient_price": "A reference price is the basis for calculating state support. It is not the clinic's price and not what a patient pays."
+  },
+  "regulation": "HSLF-FS 2025:68",
+  "regulationTitle": "Tandvårds- och läkemedelsförmånsverkets föreskrifter och allmänna råd om statligt tandvårdsstöd",
+  "retrieved_at": "2026-08-14T01:32:20.559Z",
+  "schema_version": "1.0.0",
+  "source": "TLV",
+  "source_hashes": {
+    "reference-prices-2026-01-01": "4bcf4eda75f55c189fcefeb436bfd5074611f9c60a89416c7535e06ca91f2861"
+  },
+  "source_urls": [
+    "https://www.tlv.se/download/18.529dc9ea19afcca05a41160c/1765803851920/Referenspriser%20med%20dentalt%20material%20fr%C3%A5n%201%20jan%202026.xlsx",
+    "https://www.tlv.se/download/18.529dc9ea19afcca05a410f65/1765444861528/HSLF-FS_2025_68.pdf",
+    "https://kusp.tlv.se/"
+  ],
+  "supersededBy": {
+    "effectiveFrom": "2027-01-15",
+    "id": "HSLF-FS 2026:22"
+  }
+}
